@@ -188,5 +188,10 @@ int main(void)
 
     mpz_clears(n, e, d, message_num, ciphertext, decrypted_num, NULL);
 
+    for(int i=0; i<c_len; i++)
+    {
+        printf("%d \n", c[i]);
+    }   
+
     return 0;
 }
