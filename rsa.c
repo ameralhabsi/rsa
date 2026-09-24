@@ -139,6 +139,7 @@ void rsa_decrypt_buf(uint8_t *out, size_t *outlen, const uint8_t *c, size_t len,
     mpz_clears(m, NULL);
 }
 
+// th main prog
 
 int main(void) 
 {
@@ -190,8 +191,9 @@ int main(void)
 
     for(int i=0; i<c_len; i++)
     {
-        printf("%d \n", c[i]);
+        printf("%d ", c[i]);
     }   
+    printf("\n");   
 
     return 0;
 }
